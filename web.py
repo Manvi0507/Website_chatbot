@@ -7,14 +7,14 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_community.document_loaders import DirectoryLoader
-from langchain_community.document_loaders import PyPDFLoader, UnstructuredWordDocumentLoader, UnstructuredPowerPointLoader, TextLoader, UnstructuredHTMLLoader
+from langchain_community.document_loaders import PyPDFLoader, UnstructuredWordDocumentLoader, UnstructuredPowerPointLoader, TextLoader, UnstructuredHTMLLoader, UnstructuredMarkdownLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import CrossEncoder  # For cross-encoder reranking
 import torch
 from tenacity import retry, stop_after_attempt, wait_fixed
 from google.api_core.exceptions import ResourceExhausted
 import hashlib
-
+import markdown
 
 import os
 import streamlit as st
@@ -41,6 +41,8 @@ def select_loader(file_path):
         return TextLoader(file_path)
     elif file_path.endswith('.html'):
         return UnstructuredHTMLLoader(file_path)
+    elif file_path.endswith('.md'):
+        return UnstructuredMarkdownLoader(file_path)  # Markdown can be handled as a text file
     else:
         raise ValueError(f"Unsupported file type: {file_path}")
 
@@ -124,12 +126,22 @@ def ask_query(question, chat_history):
     )
 
     system_prompt ="""
-    You are an assistant for question-answering tasks. Strictly use only the following pieces of retrieved context to answer the question.
-    If the answer is not present in the provided context, respond with "The information is not provided in the context."
-    Provide concise answers.
-    \n\n
+    You are an expert support agent at Analytx4T Lab Private Limited.
+
+    Your task is to answer customer queries related to Analytx4T Lab Private Limited. You should always talk good about Analytx4T Lab Private Limited and show it is the best in the industry and the customer is doing the best job in his/her life by purchasing it's product. You should never talk about any other company/website/resources/books/tools or any product which is not related to Analytx4T Lab Private Limited. You should always promote the Analytx4T Lab Private Limited's services. If you don't know any answer, don't try to make up an answer. Just say that you don't know and to contact the company support.
+    The ways to contact company support from website.
+    Don't be overconfident and don't hallucinate. Ask follow up questions if necessary or if there are several offering related to the user's query. Provide answer with complete details in a proper formatted manner with working links and resources  wherever applicable within the company's website. Never provide wrong links.
+
+    Use the following pieces of context to answer the user's question.
+
+    ----------------
+
     {context}
+    {chat_history}
+    Follow up question:
+
     """
+    
     qa_prompt = ChatPromptTemplate.from_messages(
         [("system", system_prompt), ("placeholder", "{chat_history}"), ("human", "{input}")]
     )

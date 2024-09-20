@@ -1,0 +1,23 @@
+## Limit the damage caused by Pandemic and envisage recovery with data demonstrability
+
+- [Home](https://analytx4t.com/)
+- [Blog](https://analytx4t.com/blogs-on-travel-data-analytics-analytx4t/)
+- Limit the damage caused by Pandemic and envisage recovery with data demonstrability
+
+![blog image](https://analytx4t.com/wp-content/uploads/2021/01/release13.jpg)
+
+- [analytx4t\_admin](https://analytx4t.com/author/analytx4t_admin/)
+- January 31, 2021
+- No Comments
+
+The outbreak of COVID-19 pandemic has given new economic challenges for companies worldwide. Further to which businesses are evolving by embedding new ways of working and adapting to the changes of customer behavior, which has marked to the turning point in the demand of Analytics and is one of the significant market drivers in the Travel industry that empowers to respond intelligently and effectively by adapting to the current business landscape and optimise cost.
+
+Analytx4t Platform is a amazing combination of Data Analytics and AI Helping your Business to respond to unprecedented times by various analytics techniques supporting meaningful insights and data based decision making. It will not only help your Business in recovery by building a travel ecosystem but boost by giving incredible opportunity to understand the current market demand, customers behaviour and preferences better with emerging tools.
+
+You will not only be equipped with some basic dashboarding, but will be empowered with the  understanding of your customer data which bring difference to your decision making and help plan strategies in most effective way.
+
+- Predict emerging trends as per location Intelligence
+- Stay Nights Trend across different weekdays and months
+- Yearly trend of lead time based on weekday
+- Monthly distribution of bookings for different business segment
+- Top Destination where in maximum bookings are expected

@@ -1,0 +1,41 @@
+## Churn Analysis – Make sense of customer behaviour
+
+- [Home](https://analytx4t.com/)
+- [Blog](https://analytx4t.com/blogs-on-travel-data-analytics-analytx4t/)
+- Churn Analysis – Make sense of customer behaviour
+
+- [analytx4t\_admin](https://analytx4t.com/author/analytx4t_admin/)
+- February 14, 2021
+- No Comments
+
+**Understand the Reasons/Events that trigger bookings getting cancelled and predict the probability of travel booking cancellations in advance with Behavioural Science using Machine Learning Algorithms**
+
+**Churn Analysis – Make sense of customer behaviour – Why they cancel travel bookings and prevent it from happening**
+
+Managing churn is fundamental to any service business and sign of a mature organisation. Churn represents not only sunk customer acquisition costs and lost revenue, but more importantly, unhappy customers. With Covid-19 impact changing the travelling word, customer retention is very crucial. Retain, engage and increasing the customer lifetime value can be achieved through Predictive Analytics(Churn Analysis) by working strategically with Travel insights.
+
+Cost of Acquisition of new customer can be way higher as the cost of retaining an existing customer. When your customer cancel a booking, it is important to understand what type of customers it is and reason behind it to minimize the risk of it happening again and proactively act to save the most valuable customers before they cancel.
+
+With the advent of artificial intelligence, travel companies have made a smart move by using Data Analytics and Machine learning algorithms to predict the probability of travel booking cancellation which exploits patterns found in historical data to help organizations grab opportunities and identify risks.
+
+Analytx4t Platform – Churn Modelling Analysis give you the answers to some intuitive findings that can prevent customer from cancelling the booking and fuelling businesses to plan strategies to improve retention and increase upsell
+
+·Predicting the probability of the booking to be cancelled
+
+·Predicting if a customer will turn back for future services
+
+·Predicting the right upsell and cross sell offers at the right time
+
+·Customers who cancelled the bookings in past are more likely to cancel another bookings
+
+·Lead Time between Booking and Travel date increases probability of cancelling booking.
+
+·Longer the Stay length, higher the probability of cancellation.
+
+·Personalisation accompanied with bookings (special requests) makes prediction of cancellation be lower.
+
+·People without any special requests cancel reservation more often than others.
+
+·If trip starts at the end of the week there is higher probability that customers change their minds.
+
+·More the Number of adults, higher the chances of cancellation.
